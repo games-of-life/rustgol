@@ -1,13 +1,12 @@
 use super::grid_trait::*;
-use std::collections::HashSet;
-use rand::Rng;
 use itertools::Itertools;
+use rand::Rng;
+use std::collections::HashSet;
 
 pub struct SetGrid {
     dims: Size,
     field: HashSet<(u64, u64)>,
 }
-
 
 impl SetGrid {
     pub fn new(width: usize, height: usize, prob: f64) -> Self {
