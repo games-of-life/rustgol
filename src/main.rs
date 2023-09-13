@@ -1,6 +1,6 @@
 use raylib::prelude::*;
 mod grid;
-use crate::grid::grid::*;
+use crate::grid::*;
 
 const WIDTH: usize = 800;
 const HEIGHT: usize = 600;
@@ -17,7 +17,7 @@ fn main() {
 
     rl.set_target_fps(30);
 
-    let mut gr = SetGrid::new(box_width, box_height, 0.5);
+    let mut gr = VectorGrid::new(box_width, box_height, 0.5);
 
     while !rl.window_should_close() {
         let mut d = rl.begin_drawing(&thread);
