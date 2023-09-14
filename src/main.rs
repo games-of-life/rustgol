@@ -15,7 +15,7 @@ fn main() {
     let box_width: usize = WIDTH / BOX_DIMENSION;
     let box_height: usize = HEIGHT / BOX_DIMENSION;
 
-    rl.set_target_fps(30);
+    // rl.set_target_fps(30);
 
     let mut gr = VectorGrid::new(box_width, box_height, 0.5);
 
