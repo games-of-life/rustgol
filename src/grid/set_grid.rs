@@ -11,10 +11,7 @@ pub struct SetGrid {
 impl SetGrid {
     pub fn new(width: usize, height: usize, prob: f64) -> Self {
         Self {
-            dims: Size {
-                width: width,
-                height: height,
-            },
+            dims: Size { width, height },
             field: (0..(width as f64 * height as f64 * prob) as usize)
                 .map(|_| {
                     (
